@@ -147,7 +147,6 @@
 <br>• Brake service & repair
 <br>• Chain & sprocket service
 <br>• Clutch adjustment & repair
-<br>• Battery check & replacement
 <br>• Suspension & fork work
 
 <br>What type of service does your bike or scooter need?`;
@@ -162,8 +161,8 @@
 <br>2. What issue are you experiencing?
 <br>3. Preferred date & time
 
-<br>Or call us directly at: **9762046636**
-<br>WhatsApp: **9762046636**
+<br>📞 **Call Now:** <a href="tel:9762046636" style="color: #ff3333; text-decoration: underline; font-weight: bold;">9762046636</a>
+<br>💬 **WhatsApp:** <a href="https://wa.me/9762046636" target="_blank" style="color: #ff3333; text-decoration: underline; font-weight: bold;">9762046636</a>
 
 <br>Would you like to book now?`;
             }
@@ -179,7 +178,6 @@
 <br>🏍️ **Brake Service:** ₹400 - ₹1500
 <br>🏍️ **Chain & Sprocket:** ₹300 - ₹800
 <br>🏍️ **Clutch Work:** ₹500 - ₹1800
-<br>🏍️ **Battery Service:** ₹300 - ₹1000
 <br>🏍️ **Suspension Work:** ₹600 - ₹2500
 
 <br>*Final cost depends on bike/scooter condition and parts needed.*
@@ -198,7 +196,6 @@
 <br>🏍️ **Brake Service:** 1-3 hours
 <br>🏍️ **Chain & Sprocket:** 1-2 hours
 <br>🏍️ **Clutch Work:** 2-4 hours
-<br>🏍️ **Battery Service:** 30-60 minutes
 <br>🏍️ **Suspension Work:** 2-4 hours
 
 <br>*Time may vary based on bike/scooter condition.*
@@ -217,8 +214,8 @@
 
 <br>🗺️ **Get Directions:** <a href="https://share.google/tnOoi68MKJZbHJ8Y1" target="_blank" style="color: #ff3333; text-decoration: underline;">View on Google Maps</a>
 
-<br>📞 **Call:** 9762046636
-<br>💬 **WhatsApp:** 9762046636
+<br>📞 **Call Now:** <a href="tel:9762046636" style="color: #ff3333; text-decoration: underline; font-weight: bold;">9762046636</a>
+<br>💬 **WhatsApp:** <a href="https://wa.me/9762046636" target="_blank" style="color: #ff3333; text-decoration: underline; font-weight: bold;">9762046636</a>
 <br>🕐 **Hours:** Tue-Sun 10AM-7PM
 
 <br>Would you like directions or want to book a service?`;
@@ -228,8 +225,8 @@
             if (message.includes('emergency') || message.includes('urgent') || message.includes('breakdown')) {
                 return `🚨 **For urgent service needs:**
 
-<br>📞 **Call:** 9762046636
-<br>💬 **WhatsApp:** 9762046636
+<br>📞 **Call Now:** <a href="tel:9762046636" style="color: #ff3333; text-decoration: underline; font-weight: bold;">9762046636</a>
+<br>💬 **WhatsApp:** <a href="https://wa.me/9762046636" target="_blank" style="color: #ff3333; text-decoration: underline; font-weight: bold;">9762046636</a>
 
 <br>We provide:
 <br>⚡ Quick response time
@@ -248,18 +245,8 @@
 <br>I can help with:
 <br>🏍️ Service information for bikes & scooters
 <br>📍 Location & contact details
-<br>🕐 Working hours
 
-<br>Common issues I can help with:
-<br>🔧 Noise, vibration, starting problems
-<br>⚡ Low mileage, poor performance
-<br>🛑 Brake issues, chain problems
-<br>🔋 Battery trouble, electrical issues
-<br>🎯 Alignment, suspension problems
-
-<br>What would you like to know about your bike or scooter?
-
-<br>Or call us directly: **9762046636**`;
+<br>📞 **Call Now:** <a href="tel:9762046636" style="color: #ff3333; text-decoration: underline; font-weight: bold;">9762046636</a>`;
         }
     };
     
