@@ -6,7 +6,7 @@
         init: function() {
             this.createChatInterface();
             this.addEventListeners();
-            this.addBotMessage("Hello 👋 Welcome to Raj Alignment Service!<br>How can I help you today — servicing, repair, or booking an appointment?");
+            this.addBotMessage("Hello 👋 Welcome to Raj Alignment Service!<br>I'm your friendly bike and scooter service assistant.<br>How can I help you today?");
         },
         
         createChatInterface: function() {
@@ -138,14 +138,19 @@
             
             // Service related queries
             if (message.includes('service') || message.includes('servicing')) {
-                return `🏍️ **Bike Servicing Available:**
-<br>• Fork alignment
-<br>• Chassis alignment  
-<br>• Mac wheel repair
-<br>• Expert repairs
-<br>• Performance-focused maintenance
+                return `🏍️ **Bike & Scooter Services:**
+<br>• Fork alignment & chassis work
+<br>• Mac wheel repair & balancing
+<br>• General servicing & maintenance
+<br>• Engine diagnostics & repair
+<br>• Oil change & filter replacement
+<br>• Brake service & repair
+<br>• Chain & sprocket service
+<br>• Clutch adjustment & repair
+<br>• Battery check & replacement
+<br>• Suspension & fork work
 
-<br>What type of bike service do you need?`;
+<br>What type of service does your bike or scooter need?`;
             }
             
             // Booking related queries
@@ -153,8 +158,8 @@
                 return `📅 **Book Your Service:**
 <br>To book your appointment, I need some details:
 
-<br>1. Bike brand & model
-<br>2. Service needed
+<br>1. Bike/scooter brand & model
+<br>2. What issue are you experiencing?
 <br>3. Preferred date & time
 
 <br>Or call us directly at: **9762046636**
@@ -165,28 +170,38 @@
             
             // Cost related queries
             if (message.includes('cost') || message.includes('price') || message.includes('rate')) {
-                return `💰 **Bike Service Cost Estimates:**
-<br>🏍️ **Fork Alignment:** ₹500 - ₹1500
-<br>🏍️ **Chassis Alignment:** ₹800 - ₹2000
+                return `💰 **Service Cost Estimates:**
+<br>🏍️ **Fork/Chassis Alignment:** ₹500 - ₹1500
 <br>🏍️ **Mac Wheel Repair:** ₹400 - ₹1200
-<br>🏍️ **Expert Repairs:** ₹600 - ₹3000
-<br>🏍️ **Performance Maintenance:** ₹1000 - ₹2500
+<br>🏍️ **General Servicing:** ₹600 - ₹2000
+<br>🏍️ **Engine Diagnostics:** ₹400 - ₹1000
+<br>🏍️ **Oil Change:** ₹200 - ₹600
+<br>🏍️ **Brake Service:** ₹400 - ₹1500
+<br>🏍️ **Chain & Sprocket:** ₹300 - ₹800
+<br>🏍️ **Clutch Work:** ₹500 - ₹1800
+<br>🏍️ **Battery Service:** ₹300 - ₹1000
+<br>🏍️ **Suspension Work:** ₹600 - ₹2500
 
-<br>*Final cost depends on bike condition and parts needed.*
+<br>*Final cost depends on bike/scooter condition and parts needed.*
 
-<br>For exact pricing, our technician will confirm after inspection.`;
+<br>For exact pricing, our mechanic will confirm after inspection.`;
             }
             
             // Time related queries
             if (message.includes('time') || message.includes('duration') || message.includes('how long') || message.includes('hours')) {
-                return `⏰ **Bike Service Duration:**
-<br>🏍️ **Fork Alignment:** 1-2 hours
-<br>🏍️ **Chassis Alignment:** 2-3 hours
+                return `⏰ **Service Duration:**
+<br>🏍️ **Fork/Chassis Alignment:** 1-2 hours
 <br>🏍️ **Mac Wheel Repair:** 1-2 hours
-<br>🏍️ **Expert Repairs:** 2-4 hours
-<br>🏍️ **Performance Maintenance:** 3-5 hours
+<br>🏍️ **General Servicing:** 2-4 hours
+<br>🏍️ **Engine Diagnostics:** 1-3 hours
+<br>🏍️ **Oil Change:** 30-45 minutes
+<br>🏍️ **Brake Service:** 1-3 hours
+<br>🏍️ **Chain & Sprocket:** 1-2 hours
+<br>🏍️ **Clutch Work:** 2-4 hours
+<br>🏍️ **Battery Service:** 30-60 minutes
+<br>🏍️ **Suspension Work:** 2-4 hours
 
-<br>*Time may vary based on bike condition.*
+<br>*Time may vary based on bike/scooter condition.*
 
 <br>**Working Hours:**
 <br>Tuesday - Sunday: 10AM - 7PM
@@ -200,13 +215,13 @@
 <br>Medi Point, Opp. Chandnagar
 <br>Kharadi, Pune
 
+<br>🗺️ **Get Directions:** <a href="https://share.google/tnOoi68MKJZbHJ8Y1" target="_blank" style="color: #ff3333; text-decoration: underline;">View on Google Maps</a>
+
 <br>📞 **Call:** 9762046636
 <br>💬 **WhatsApp:** 9762046636
 <br>🕐 **Hours:** Tue-Sun 10AM-7PM
 
-<br>🚚 **Pickup & Drop:** Available within city limits
-
-<br>Would you like directions or want to book a pickup?`;
+<br>Would you like directions or want to book a service?`;
             }
             
             // Emergency queries
@@ -218,7 +233,6 @@
 
 <br>We provide:
 <br>⚡ Quick response time
-<br>🚚 Pickup service
 <br>🔧 Expert repairs
 <br>🏠 Safe drop-off
 
@@ -229,13 +243,21 @@
             }
             
             // Default response
-            return `👋 **I'm here to help!**
+            return `👋 **I'm your friendly bike & scooter assistant!**
 
-<br>I can assist with:
-<br>🏍️ Bike service information
-<br>📍 Location & contact
+<br>I can help with:
+<br>🏍️ Service information for bikes & scooters
+<br>📍 Location & contact details
+<br>🕐 Working hours
 
-<br>What would you like to know about our bike services?
+<br>Common issues I can help with:
+<br>🔧 Noise, vibration, starting problems
+<br>⚡ Low mileage, poor performance
+<br>🛑 Brake issues, chain problems
+<br>🔋 Battery trouble, electrical issues
+<br>🎯 Alignment, suspension problems
+
+<br>What would you like to know about your bike or scooter?
 
 <br>Or call us directly: **9762046636**`;
         }
